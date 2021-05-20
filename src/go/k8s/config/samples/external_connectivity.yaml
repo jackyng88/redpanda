@@ -6,6 +6,8 @@ spec:
   image: "vectorized/redpanda"
   securityContext:
     runAsNonRoot: true
+    runAsUser: 1000820000
+    runAsGroup: 1000820000
   version: "latest"
   replicas: 3
   resources:
