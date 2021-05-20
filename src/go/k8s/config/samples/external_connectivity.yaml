@@ -4,6 +4,8 @@ metadata:
   name: external-connectivity
 spec:
   image: "vectorized/redpanda"
+  securityContext:
+    runAsNonRoot: true
   version: "latest"
   replicas: 3
   resources:
